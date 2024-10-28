@@ -18,7 +18,7 @@ This iOS app displays a list of popular movies and allows users to view details 
 - Trailers may only be available for some movies.
 - YouTube player requires an internet connection.
 
-##Notes and Required Corrections
+## Notes and Required Corrections
 
 1. Duration Not Available in Popular Movies API Response
 The https://api.themoviedb.org/3/movie/popular endpoint does not include a duration (runtime) field for each movie. To display the duration, we need to make an additional request to the Movie Details API (https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}) for each movie, as this is the only endpoint that provides the runtime information.
